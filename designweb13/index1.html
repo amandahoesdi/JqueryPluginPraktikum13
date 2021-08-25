@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Membuat Image Slider Menggunakan jQuery</title>
+        <meta name="description" content="Sederhana dan sangat powerful: Slide slider">
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+        <!-- Instalasi font Lato dari Google, abaikan jika tidak terkoneksi internet-->
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+
+        <!--Include jquery-->
+        <script src="./src/jquery-3.6.0.min.js"></script>
+        <script src="./src/jquery-migrate-1.2.1.min.js"></script>
+
+        <!-- Include the slider scripts-->
+        <script type="text/javascript" src="./src/jquery.simpleslider.js"></script>
+        <script type="text/javascript" src="./src/backstretch.js"></script>
+        <script type="text/javascript" src="./src/custom.js"></script>
+
+    </head>
+    <body>
+        
+        <header id="top">
+            <div id="logo"><span class="logo">Slider menggunakan jquery</span><span class="dynamic"></span></div>
+        </header>
+        <div class="pagewrap">
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" 
+            src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v11.0" nonce="EgXYMb0t"></script>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" 
+        data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+
+            <div class="githubbuttons">
+                <iframe src="http://ghbtns.com/github-btn.html?user=amandahoesdi&repo=JqueryPluginPraktikum13&type=watch&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
+                <iframe src="http://ghbtns.com/github-btn.html?user=amandahoesdi&repo=JqueryPluginPraktikum13&type=fork&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0" width="85" height="20"></iframe>
+                <iframe src="http://ghbtns.com/github-btn.html?user=amandahoesdi&repo=JqueryPluginPraktikum13&type=follow"
+                allowtransparency="true" frameborder="0" scrolling="0" width="145" height="20"></iframe>
+            </div>
+            <div class="pageblock" id="fullscreen">
+                <div class="slider">
+                    <div class="slide" id="satu">
+                        <div class="slidecontent">
+                            <span class="headersur">Sangat powerfull dan sederhana di waktu yang sama</span>
+                            <h1>SLIDE PERTAMA</h1>
+                            <div class="button" onclick="mainslider.nextSlide();">Lihat betapa sederhananya</div>
+                        </div>
+                    </div>
+                    <div class="slide" id="dua">
+                        <div class="slidecontent">
+                            <span class="headersur"></br></br>Masukkan semua disini</span>
+                            <h1>SLIDE KEDUA</h1>
+                            <div class="text">
+                                <p>Siapkan dan download file simpleslider.js, jquery.touchswipe.js dan transit.js</p>
+                                <xmp>
+                                    <script src="./src/jquery-3.6.0.js"></script>
+                                    <script src="./src/jquery-migrate-1.2.1.min.js"></script>
+                                    <script type="text/javascript" src="./src/transit.js"></script>
+                                    <script type="text/javascript" src="./src/jquery.touchSwipe.js"></script>
+                                    <script type="text/javascript" src="./src/jquery.simpleslider.js"></script>
+                                </xmp>
+
+                                <div class="button" onclick="mainslider.nextSlide();">Sudah? Ayo Lanjutkan!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" id="tiga">
+                        <div class="slidecontent">
+                            <span class="headersur">Sudah siap?</span>
+                            <h1>Langkah Berikutnya</h1>
+                            <div class="text">
+                                <p>Masukkan kode ini di HTML, cek <a href="https://github.com/amandahoesdi/JqueryPluginPraktikum13/blob/main/designweb13/index1.html"
+                                target="_BLANK">Github README </a>Contoh HTML.</p>
+                                <xmp>$(document).ready(function(){
+                                    $(".slider").simpleslider();
+                                });</xmp>
+                                <div class="button" onclick="mainslider.nextSlide();">Selesai? Lanjutkan lagi!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" id="empat">
+                        <div class="slidecontent">
+                            <span class="headersur">Ini Langkah Selanjutnya</span>
+                            <div class="text">
+                                <p>Masukkan kode ini di file javascript, cek<a href="https://github.com/amandahoesdi/JqueryPluginPraktikum13/blob/main/designweb13/src/custom.js"
+                                target="_BLANK"> Github README </a> Contoh javascript.</p>
+                                <xmp>
+                                    var mainslider;
+                                    var sliding = false;
+                                    $(document).ready(function(){
+                                        var options = {}
+                                    };
+                                </xmp>
+                                <div class="button" onclick="mainslider.nextSlide();">Lanjut ke tahap terakhir?</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" id="lima">
+                        <div class="slidecontent">
+                            <span class="headersur">Langkah Terakhir</span>
+                            <div class="text">
+                                <p>Masukkan kode ini di CSS, cek <a href="https://github.com/amandahoesdi/JqueryPluginPraktikum13/blob/main/designweb13/style.css"
+                                target="_BLANK"> Github README </a> Contoh CSS Lengkapnya.</p>
+                                <xmp>
+                                    html,body{
+                                    margin: 0;
+                                    padding: 0;
+                                    font-family: "Lato", Arial, Verdana;
+                                    font-size: 20px;
+                                    height: 100%;
+                                    background-color: #fff;
+                                    width: 100%;
+                                    color: #222222;}
+                                </xmp>
+                                <div class="button" onclick="mainslider.nextSlide();">Selesai! Ingin mempelajari yang lain?</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" id="enam">
+                        <div class="slidecontent">
+                            <span class="headersur">Sudah selesai</span>
+                            <h1>LIHAT</h1>
+                            <div class="text">
+                                <p>Slider Sudah Selesai, Mau lihat opsi yang lain?</p>
+                                <p>Ada methods, triggers dan tracker yang  bisa dikonfugirasikan</p>
+
+                                <div class="button"><a href="https://github.com/amandahoesdi/JqueryPluginPraktikum13"
+                                target="_BLANK">Cek</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="copy">
+                Project : <a href="https://www.facebook.com/amanda.jak.752/" rel="publisher">Amanda</a>
+                <a href="https://github.com/amandahoesdi">Github : Amanda Hoesdi</a>
+            </div>
+        </div>
+    </body>
+</html>
